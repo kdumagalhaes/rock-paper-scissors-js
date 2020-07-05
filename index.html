@@ -20,18 +20,33 @@
                 </p>
             </header>
             <section id="start-game">
-                <label for="players-name" id="label-name"><p>Say your name</p> <p>and click on Start Game!</p></label>
-                <input type="text" placeholder="Just your first name..." id="players-name">
-                <button id="start-button"><i class="fas fa-play"></i> Start game</button>
+                <label for="players-name" id="label-name"><p>Insert your name</p> <p>and click on Start Game!</p></label>
+                <input type="text" placeholder="Your name here..." id="players-name">
+                <button id="start-button"><i class="fas fa-play"></i> Start Game</button>
                 <div id="progress">
                     <div id="bar">10%</div>
                   </div>
             </section>
             <section id="game-started">
+                <div id="score-row">
+                    <div>
+                        <h3 class="my-name">Human</h3>
+                        <div class="score-bar">
+                            <div class="score-progress" id="user-progress"></div>
+                        </div>
+                     </div>
+                    <span>Vs</span>
+                    <div>
+                     <h3>Computer</h3>
+                        <div class="score-bar">
+                            <div class="score-progress"></div>
+                        </div>
+                     </div>
+                </div>
             <div class="row">
                 <div class="message">
-                <h2 class="my-name">Me</h2>
-                <p>I'm gonna win!</p>
+                <h2 class="my-name">Human</h2>
+                <span id="user-message"></span>
                 </div>
                 <div class="controlers">
                     <div><i class="far fa-hand-rock my-play" id="youRock"></i></div>
@@ -42,7 +57,7 @@
             <div class="row">
                 <div class="message">
                 <h2>Computer</h2>
-                <p>I don't think so, human.</p>
+                <span id="computer-message"></span>
                 </div>
                 <div class="controlers">
                     <div><i class="far fa-hand-rock" id="compRock"></i></div>
@@ -50,22 +65,10 @@
                     <div><i class="far fa-hand-scissors" id="compScissor"></i></div>
                 </div>
             </div>
-            <div id="score-row">
-                <h2>Score</h2>
-                <h3>Computer</h3>
-                <div class="score-bar">
-                    <div class="score-progress"></div>
-                </div>
-                <h3 class="my-name">Me</h3>
-                <div class="score-bar">
-                    <div class="score-progress"></div>
-                </div>
-            </div>
             </section>
 </div>
 </div>  
 <script src="js/script.js"></script>
 <script src="https://kit.fontawesome.com/10cb24ca90.js" crossorigin="anonymous"></script>
-
 </body>
 </html>

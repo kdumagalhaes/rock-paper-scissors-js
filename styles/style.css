@@ -14,7 +14,7 @@
 }
 
 body {
-    background: url('../imgs/playstation-pattern.png');
+    background: url('../resources/playstation-pattern.png');
     font-family: 'Roboto', sans-serif;
 }
 
@@ -94,18 +94,23 @@ body {
 
 #rps-game #start-game input {
     width: 260px;
-    border: 1px solid var(--gray);
-    border-radius: 5px;
+    border-bottom: 1px solid var(--gray);
+    border-top: none;
+    border-left: none;
+    border-right: none;
     height: 40px;
     margin-bottom: 30px;
     padding: 10px;
     font-family: 'Fredoka One', cursive;
     outline: none;
-    color: var(--gray);
+    color: var(--orange);
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 #rps-game #start-game input::placeholder {
     opacity: 0.3;
+    font-size: 1rem;
 }
 
 #rps-game #start-game button {
@@ -157,17 +162,44 @@ body {
     flex-direction: column;
 }
 
-#rps-game #game-started .row {
+#rps-game #game-started #score-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 120px;
+}
+
+#rps-game #game-started #score-row, .row {
     border-bottom: 1px dotted var(--gray);
-    height: 400px;
     margin-bottom: 30px;
     width: 100%;
-    height: 200px;
+}
+
+#rps-game #game-started #score-row h3 {
+    font-family: 'Fredoka One', cursive;
+    color: var(--orange);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-left: 12px;
+}
+
+#rps-game #game-started #score-row span {
+    font-family: 'Fredoka One', cursive;
+    color: var(--gray);
+    font-size: 2rem;
+    align-self: center;
+    margin-top: -25px;
+}
+
+#rps-game #game-started .row {
     display: flex;
+    height: 200px;
+
 }
 
 #rps-game #game-started .row:last-child {
     border-bottom: none;
+    margin-bottom: 0;
 }
 
 #rps-game #game-started h2 {
@@ -226,13 +258,13 @@ body {
 }
 
 #rps-game #game-started .score-bar {
-    width: 300px;
+    width: 500px;
     background-color: var(--gray);
     border-radius: 50px;
 }
 
 #rps-game #game-started .score-progress {
-    width: 300px;
+    width: 0;
     height: 30px;
     background-color: var(--green);
     text-align: center;
@@ -240,4 +272,3 @@ body {
     color: white;
     border-radius: 50px;
 }
-
