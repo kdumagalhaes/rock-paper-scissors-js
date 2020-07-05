@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300;700&display=swap');
+
+:root {
+    --brown: #A18B77;
+    --orange: #EC5F2E;
+    --green: #539A9F;
+    --gray: #a1a1a1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../imgs/playstation-pattern.png');
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    margin: 30px;
+}
+
+#rps-game {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#rps-game header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#rps-game header h1 {
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 1.8rem;
+}
+
+.brown {
+    color: var(--brown);
+}
+
+.green {
+    color: var(--green);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+#rps-game header p {
+    color: var(--gray);
+    font-size: 0.9rem;
+    text-align: right;
+    line-height: 20px;
+}
+
+#rps-game header a {
+    color: var(--orange);
+    text-decoration: none;
+    transition: all 0.6s;
+    font-weight: bold;
+}
+
+#rps-game header a:hover {
+    color: var(--green);
+}
+
+#rps-game #start-game {
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 1px 3px 3px #eee;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#rps-game #start-game button {
+    width: 260px;
+    height: 70px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+#rps-game #start-game button:hover {
+    background-color: var(--green);
+}
+
+#rps-game #start-game button.hide {
+    display: none;
+}
+
+#rps-game #start-game button i {
+    margin-right: 30px;
+}
+
+#rps-game #start-game.hide { 
+    display: none;
+}
+
+#myProgress {
+    width: 30%;
+    background-color: var(--gray);
+    border-radius: 50px;
+}
+  
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: var(--orange);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 50px;
+    display: none;
+}  
+
+#myBar.show {
+    display: block;
+}
+
+#rps-game #game-started {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 1px 3px 3px #eee;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#rps-game #game-started .row {
+    border-bottom: 1px dotted var(--gray);
+    height: 400px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 200px;
+}
+
+#rps-game #game-started .row:last-child {
+    border-bottom: none;
+}
+
+#rps-game #game-started h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+#rps-game #game-started .controlers {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8rem;
+    margin: 0 auto;
+}
+
+#rps-game #game-started .controlers i {
+    color: var(--brown);
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+#rps-game #game-started .controlers .my-play {
+    cursor: pointer;
+}
+
+#rps-game #game-started .controlers .my-play:hover {
+    opacity: 1;
+    color: var(--green);
+
+}
+
+#rps-game #game-started {
+    display: none;
+}
+
+#rps-game #game-started.show {
+    display: flex;
+}

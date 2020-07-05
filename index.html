@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="rps-game">
+            <header>
+                <a href="index.html">
+                <h1><span class="brown">Rock</span> </br> <span class="green">Paper</span> </br> <span class="orange">Scissors</span></h1>
+                </a>
+                <p>This game is a challenge that </br> 
+                is part of <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> curriculum,
+                </br>
+                and it has been created by <a href="http://kadumagalhes.me">Kadu Magalhães</a>.
+                </p>
+            </header>
+            <section id="start-game">
+                <button id="start-button"><i class="fas fa-play"></i> Start game</button>
+                <div id="myProgress">
+                    <div id="myBar">10%</div>
+                  </div>
+            </section>
+            <section id="game-started">
+            <div class="row">
+                <h2>You</h2>
+                <div class="controlers">
+                <div><i class="far fa-hand-rock my-play" id="youRock"></i></div>
+                <div><i class="far fa-hand-paper my-play" id="youPaper"></i></div>
+                <div><i class="far fa-hand-scissors my-play" id="youScissor"></i></div>
+            </div>
+            </div>
+            <div class="row">
+                <h2>Computer</h2>
+                <div class="controlers">
+                    <div><i class="far fa-hand-rock" id="compRock"></i></div>
+                    <div><i class="far fa-hand-paper" id="compPaper"></i></div>
+                    <div><i class="far fa-hand-scissors" id="compScissor"></i></div>
+                </div>
+            </div>
+            <div class="row">
+                <h2>Score</h2>
+            </div>
+            </section>
+</div>
+</div>  
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/10cb24ca90.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
