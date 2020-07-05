@@ -84,6 +84,30 @@ body {
     flex-direction: column;
 }
 
+#rps-game #start-game #label-name {
+    color: var(--gray);
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#rps-game #start-game input {
+    width: 260px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-family: 'Fredoka One', cursive;
+    outline: none;
+    color: var(--gray);
+}
+
+#rps-game #start-game input::placeholder {
+    opacity: 0.3;
+}
+
 #rps-game #start-game button {
     width: 260px;
     height: 70px;
@@ -139,6 +163,7 @@ body {
     margin-bottom: 30px;
     width: 100%;
     height: 200px;
+    display: flex;
 }
 
 #rps-game #game-started .row:last-child {
@@ -175,14 +200,44 @@ body {
 #rps-game #game-started .controlers .my-play:hover {
     opacity: 1;
     color: var(--green);
-
 }
 
 #rps-game #game-started {
     display: none;
 }
 
+#rps-game #game-started .message {
+    width: 100%;
+    max-width: 200px;
+}
+
 #rps-game #game-started p {
     color: var(--gray);
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-family: monospace;
+    width: 100%;
+    max-width: 150px;
+    background-color: var(--green);
+    padding: 5px;
+    color: #fff;
+    border-radius: 6px;
+    text-align: left;
+    opacity: 0.6;
 }
+
+#rps-game #game-started .score-bar {
+    width: 300px;
+    background-color: var(--gray);
+    border-radius: 50px;
+}
+
+#rps-game #game-started .score-progress {
+    width: 300px;
+    height: 30px;
+    background-color: var(--green);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 50px;
+}
+

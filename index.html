@@ -20,6 +20,8 @@
                 </p>
             </header>
             <section id="start-game">
+                <label for="players-name" id="label-name"><p>Say your name</p> <p>and click on Start Game!</p></label>
+                <input type="text" placeholder="Just your first name..." id="players-name">
                 <button id="start-button"><i class="fas fa-play"></i> Start game</button>
                 <div id="progress">
                     <div id="bar">10%</div>
@@ -27,24 +29,37 @@
             </section>
             <section id="game-started">
             <div class="row">
-                <h2>You</h2>
-                <p>Choose your option!</p>
+                <div class="message">
+                <h2 class="my-name">Me</h2>
+                <p>I'm gonna win!</p>
+                </div>
                 <div class="controlers">
-                <div><i class="far fa-hand-rock my-play" id="youRock"></i></div>
-                <div><i class="far fa-hand-paper my-play" id="youPaper"></i></div>
-                <div><i class="far fa-hand-scissors my-play" id="youScissor"></i></div>
-            </div>
+                    <div><i class="far fa-hand-rock my-play" id="youRock"></i></div>
+                    <div><i class="far fa-hand-paper my-play" id="youPaper"></i></div>
+                    <div><i class="far fa-hand-scissors my-play" id="youScissor"></i></div>
+                </div>
             </div>
             <div class="row">
+                <div class="message">
                 <h2>Computer</h2>
+                <p>I don't think so, human.</p>
+                </div>
                 <div class="controlers">
                     <div><i class="far fa-hand-rock" id="compRock"></i></div>
                     <div><i class="far fa-hand-paper" id="compPaper"></i></div>
                     <div><i class="far fa-hand-scissors" id="compScissor"></i></div>
                 </div>
             </div>
-            <div class="row">
+            <div id="score-row">
                 <h2>Score</h2>
+                <h3>Computer</h3>
+                <div class="score-bar">
+                    <div class="score-progress"></div>
+                </div>
+                <h3 class="my-name">Me</h3>
+                <div class="score-bar">
+                    <div class="score-progress"></div>
+                </div>
             </div>
             </section>
 </div>

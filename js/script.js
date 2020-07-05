@@ -15,6 +15,8 @@ const gameStarted = document.getElementById('game-started')
 
 startBtn.addEventListener('click', () => {
     startBtn.style.display = 'none'
+    playersName.style.display = 'none'
+    labelName.style.display = 'none'
     if (i == 0) {
         i = 1;
         progressBar.style.display = 'block'
@@ -83,3 +85,14 @@ function computerChoice() {
         compScissor.style.opacity = 1
     }
 }
+
+
+//getting player's name
+const labelName = document.getElementById('label-name')
+const playersName = document.getElementById('players-name')
+playersName.addEventListener('change', (e)=> {
+    let inputName = e.target.value
+    const myName = document.getElementsByClassName('my-name')
+    myName[0].textContent = inputName
+    myName[1].textContent = inputName
+})
