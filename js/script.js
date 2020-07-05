@@ -9,27 +9,27 @@
 let i = 0
 
 const startBtn = document.getElementById('start-button')
-const elem = document.getElementById("myBar");
+const progressBar = document.getElementById("bar");
 const startGame = document.getElementById('start-game')
 const gameStarted = document.getElementById('game-started')
 
 startBtn.addEventListener('click', () => {
-    startBtn.classList.toggle('hide')
+    startBtn.style.display = 'none'
     if (i == 0) {
         i = 1;
-        elem.classList.toggle('show')
-        var width = 10;
-        var id = setInterval(frame, 10);
+        progressBar.style.display = 'block'
+        let width = 10;
+        let id = setInterval(frame, 10);
         function frame() {
           if (width >= 100) {
             clearInterval(id);
             i = 0;
-            startGame.classList.toggle('hide')
-            gameStarted.classList.toggle('show')
+            startGame.style.display = 'none'
+            gameStarted.style.display = 'flex'
           } else {
             width++;
-            elem.style.width = width + "%";
-            elem.innerHTML = width  + "%";
+            progressBar.style.width = width + "%";
+            progressBar.innerHTML = width  + "%";
           }
         }
       }

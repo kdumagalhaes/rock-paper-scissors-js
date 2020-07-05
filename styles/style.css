@@ -102,25 +102,17 @@ body {
     background-color: var(--green);
 }
 
-#rps-game #start-game button.hide {
-    display: none;
-}
-
 #rps-game #start-game button i {
     margin-right: 30px;
 }
 
-#rps-game #start-game.hide { 
-    display: none;
-}
-
-#myProgress {
+#progress {
     width: 30%;
     background-color: var(--gray);
     border-radius: 50px;
 }
   
-#myBar {
+#bar {
     width: 10%;
     height: 30px;
     background-color: var(--orange);
@@ -130,10 +122,6 @@ body {
     border-radius: 50px;
     display: none;
 }  
-
-#myBar.show {
-    display: block;
-}
 
 #rps-game #game-started {
     width: 100%;
@@ -194,6 +182,7 @@ body {
     display: none;
 }
 
-#rps-game #game-started.show {
-    display: flex;
+#rps-game #game-started p {
+    color: var(--gray);
+    font-size: 0.8rem;
 }
