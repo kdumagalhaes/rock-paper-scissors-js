@@ -31,8 +31,8 @@ body {
 #rps-game header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 #rps-game header h1 {
